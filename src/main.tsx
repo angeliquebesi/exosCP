@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import App from './App.tsx'
 import CompareNumbers from './Pages/CompareNumbers.tsx'
 import Navbar from './components/NavBar/NavBar.tsx'
+import './main.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
