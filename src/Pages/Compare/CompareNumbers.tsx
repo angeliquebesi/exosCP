@@ -1,6 +1,6 @@
 import { useState } from "react";
-import MoreHighComponents from "../components/MoreHighComponents";
-import ResponseComponents from "../components/ResponseComponents";
+import MoreHighComponents from "../../components/MoreHighComponents";
+import ResponseComponents from "../../components/ResponseComponents";
 import './CompareNumbers.css';
 
 function CompareNumbersTitle({ compareValue }: Readonly<{compareValue: string}>) {
