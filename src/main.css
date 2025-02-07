@@ -23,3 +23,11 @@ nav {
 h1 {
   color: rgb(2, 22, 87);
 }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

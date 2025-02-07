@@ -7,7 +7,7 @@ interface MoreHighComponentsProps {
   compareSymbol: string;
 }
 
-function MoreHighComponents({ setResult, compareSymbol }: Readonly<MoreHighComponentsProps>) {
+function MoreLessComponents({ setResult, compareSymbol }: Readonly<MoreHighComponentsProps>) {
   const [disabledButton, setDisabledButton] = useState<boolean>(false);
   const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 50), [disabledButton]);
   const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 50, ButtonValue1), [disabledButton]);
@@ -33,4 +33,4 @@ function MoreHighComponents({ setResult, compareSymbol }: Readonly<MoreHighCompo
   )
 }
 
-export default MoreHighComponents
+export default MoreLessComponents
