@@ -1,9 +1,18 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from 'react-router'
 import App from './App.tsx'
+import CompareNumbers from './Pages/CompareNumbers.tsx'
+import Navbar from './components/AtomicComponents/NavBar/NavBar.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/compare/more" element={<CompareNumbers />} />
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 )

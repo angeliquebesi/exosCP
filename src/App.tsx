@@ -1,8 +1,9 @@
-import MoreHigh from "./Pages/MoreHigh";
 
 function App() {
   return (
-    <MoreHigh /> 
+    <div>
+      App
+    </div>
   )
 }
 
