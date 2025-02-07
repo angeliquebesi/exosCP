@@ -6,9 +6,9 @@ function ResponseComponents({ result }: {readonly result: boolean | null}) {
   return (
     <>
       {result ?
-        <img src={BearKing} alt="Bear King" />
+        <img src={BearKing} alt="Bear King" height='150vh'/>
         :
-        <img src={BearSad} alt="Bear King" />
+        <img src={BearSad} alt="Bear King" height='150vh'/>
       }
     </>
   )
