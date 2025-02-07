@@ -11,7 +11,8 @@ createRoot(document.getElementById('root')!).render(
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/compare/more" element={<CompareNumbers />} />
+        <Route path="/compare/more" element={<CompareNumbers compareValue="more" />} />
+        <Route path="/compare/less" element={<CompareNumbers compareValue="less" />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

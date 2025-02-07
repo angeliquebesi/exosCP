@@ -2,13 +2,22 @@ import { useMemo, useState } from "react";
 import getRandomIntInclusive from "../utils/getRandomIntInclusive";
 import NumberButton from "./AtomicComponents/NumberButton";
 
-function MoreHighComponents({ setResult }: {readonly setResult: (result: boolean | null) => void}) {
+interface MoreHighComponentsProps {
+  setResult: (result: boolean | null) => void;
+  compareSymbol: string;
+}
+
+function MoreHighComponents({ setResult, compareSymbol }: Readonly<MoreHighComponentsProps>) {
   const [disabledButton, setDisabledButton] = useState<boolean>(false);
   const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 50), [disabledButton]);
   const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 50, ButtonValue1), [disabledButton]);
 
   const compareValue = (buttonValue: number, otherValue: number) => {
-    setResult(buttonValue > otherValue );
+    if (compareSymbol === 'more') {
+      setResult(buttonValue > otherValue );
+    } else {
+      setResult(buttonValue < otherValue );
+    }
     setDisabledButton(prev => !prev);
     setTimeout(() => {
       setDisabledButton(prev => !prev)
