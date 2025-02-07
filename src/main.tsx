@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import App from './App.tsx'
 import CompareNumbers from './Pages/CompareNumbers.tsx'
-import Navbar from './components/AtomicComponents/NavBar/NavBar.tsx'
+import Navbar from './components/NavBar/NavBar.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
