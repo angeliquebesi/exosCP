@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import getRandomIntInclusive from "../utils/getRandomIntInclusive";
 import NumberButton from "./AtomicComponents/NumberButton";
 
@@ -9,8 +9,16 @@ interface MoreHighComponentsProps {
 
 function MoreLessComponents({ setResult, compareSymbol }: Readonly<MoreHighComponentsProps>) {
   const [disabledButton, setDisabledButton] = useState<boolean>(false);
-  const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 50), [disabledButton]);
-  const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 50, ButtonValue1), [disabledButton]);
+  const [updateTrigger, setUpdateTrigger] = useState<number>(0);
+  const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 50), [updateTrigger]);
+  const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 50, ButtonValue1), [updateTrigger]);
+
+  useEffect(() => {
+    if (!disabledButton) {
+      setUpdateTrigger(prev => prev + 1);
+    }
+  }, [disabledButton]);
+  
 
   const compareValue = (buttonValue: number, otherValue: number) => {
     if (compareSymbol === 'more') {
