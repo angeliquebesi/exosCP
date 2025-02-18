@@ -7,6 +7,7 @@ function Navbar() {
       <Link to='/compare/more'>Plus Grand</Link>
       <Link to='/compare/less'>Plus Petit</Link>
       <Link to='/addition'>Addition</Link>
+      <Link to='/wordType'>Genre du Mot</Link>
     </nav>
   );
 }

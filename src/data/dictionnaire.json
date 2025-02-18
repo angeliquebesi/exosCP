@@ -1,0 +1,722 @@
+[
+  {
+    "nom": "chat",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "chats",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "chien",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "chiens",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "fille",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "filles",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "voiture",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "voitures",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "maison",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "maisons",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "arbre",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "arbres",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "livre",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "livres",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "table",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "tables",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "chaise",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "chaises",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "ordinateur",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "ordinateurs",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "fenêtre",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "fenêtres",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "porte",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "portes",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "mur",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "murs",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "plafond",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "plafonds",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "sol",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "sols",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "toit",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "toits",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "jardin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "jardins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "fleur",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "fleurs",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "oiseau",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "oiseaux",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "poisson",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "poissons",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "cheval",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "chevaux",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "vache",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "vaches",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "mouton",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "moutons",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "cochon",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "cochons",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "poule",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "poules",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "canard",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "canards",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "lapin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "lapins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "souris",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "souris",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "rat",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "rats",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "serpent",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "serpents",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "tigre",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "tigres",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "lion",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "lions",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "éléphant",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "éléphants",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "girafe",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "girafes",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "zèbre",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "zèbres",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "singe",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "singes",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "panda",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "pandas",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "kangourou",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "kangourous",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "koala",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "koalas",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "ours",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "ours",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "renard",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "renards",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "loup",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "loups",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "hibou",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "hiboux",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "aigle",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "aigles",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "requin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "requins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "dauphin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "dauphins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "baleine",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "baleines",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "pingouin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "pingouins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "poule",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "poules",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "canard",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "canards",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "lapin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "lapins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "souris",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "souris",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "rat",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "rats",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "serpent",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "serpents",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "tigre",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "tigres",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "lion",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "lions",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "éléphant",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "éléphants",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "girafe",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "girafes",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "zèbre",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "zèbres",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "singe",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "singes",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "panda",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "pandas",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "kangourou",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "kangourous",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "koala",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "koalas",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "ours",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "ours",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "renard",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "renards",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "loup",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "loups",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "hibou",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "hiboux",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "aigle",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "aigles",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "requin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "requins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "dauphin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "dauphins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "baleine",
+    "genre": "féminin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "baleines",
+    "genre": "féminin",
+    "nombre": "pluriel"
+  },
+  {
+    "nom": "pingouin",
+    "genre": "masculin",
+    "nombre": "singulier"
+  },
+  {
+    "nom": "pingouins",
+    "genre": "masculin",
+    "nombre": "pluriel"
+  }
+]

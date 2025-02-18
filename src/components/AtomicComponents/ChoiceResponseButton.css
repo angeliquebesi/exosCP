@@ -1,4 +1,4 @@
-.number-button {
+.choice-response-button {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -11,15 +11,15 @@
   height: 100px;
 }
 
-.number-button:hover {
+.choice-response-button:hover {
   background-color: rgb(176, 218, 246);
 }
 
-.number-button:active {
+.choice-response-button:active {
   background-color: #3283f4;
 }
 
-.number-button:disabled {
+.choice-response-button:disabled {
   background-color: #ccc;
   border: 1px solid #666;
   color: #666;

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import getRandomIntInclusive from "../utils/getRandomIntInclusive";
-import NumberButton from "./AtomicComponents/NumberButton";
+import ChoiceResponseButton from "./AtomicComponents/ChoiceResponseButton";
 
 interface MoreHighComponentsProps {
   setResult: (result: boolean | null) => void;
@@ -35,8 +35,8 @@ function MoreLessComponents({ setResult, compareSymbol }: Readonly<MoreHighCompo
 
   return (
     <div>
-      <NumberButton value={ButtonValue1} onClick={() => compareValue(ButtonValue1, ButtonValue2)} disabled={disabledButton} />
-      <NumberButton value={ButtonValue2} onClick={() => compareValue(ButtonValue2, ButtonValue1)} disabled={disabledButton} />
+      <ChoiceResponseButton value={ButtonValue1} onClick={() => compareValue(ButtonValue1, ButtonValue2)} disabled={disabledButton} />
+      <ChoiceResponseButton value={ButtonValue2} onClick={() => compareValue(ButtonValue2, ButtonValue1)} disabled={disabledButton} />
     </div>
   )
 }

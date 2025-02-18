@@ -1,4 +1,4 @@
-import NumberButton from "./NumberButton";
+import ChoiceResponseButton from "./ChoiceResponseButton";
 
 interface NumericKeypadProps {
   disabledButton: boolean;
@@ -14,7 +14,7 @@ function NumericKeypad({ disabledButton }: Readonly<NumericKeypadProps>) {
     <div className="numeric-keypad">
       {[1,2,3,4,5,6,7,8,9,0].map(number => {
         return (
-          <NumberButton key={number} value={number} onClick={() => addNumberToInput(number)} disabled={disabledButton} />
+          <ChoiceResponseButton key={number} value={number} onClick={() => addNumberToInput(number)} disabled={disabledButton} />
         )}
       )}
     </div>

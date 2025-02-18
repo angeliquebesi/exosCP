@@ -11,6 +11,7 @@ function App() {
         <Link to='/compare/less'>Le Plus Petit</Link>
         <Link to='/compare/more'>Le Plus Grand</Link>
         <Link to='/addition'>Addition</Link>
+        <Link to='/wordType'>Genre du mot</Link>
       </div>
     </div>
   )
