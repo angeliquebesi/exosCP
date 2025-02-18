@@ -1,7 +1,7 @@
 import './ChoiceResponseButton.css'
 
 interface ChoiceResponseButtonProps {
-  readonly value: number
+  readonly value: number | string
   readonly onClick: () => void
   readonly disabled: boolean
 }

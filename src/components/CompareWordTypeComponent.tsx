@@ -1,14 +1,19 @@
+import { useMemo } from "react"
+import { getRandomWord, Word } from "../utils/getRandomWord"
 import ChoiceResponseButton from "./AtomicComponents/ChoiceResponseButton"
 
-function CompareWordTypeComponent({ setResult }: Readonly<{setResult: (result: boolean) => void}>) {
+function CompareWordTypeComponent({ setResult, genre }: Readonly<{setResult: (result: boolean) => void, genre: string}>) {
+  const firstWord = useMemo(() => getRandomWord(), [])
+  const secondWord = useMemo(() => getRandomWord(firstWord), [firstWord])
 
-
-  // function onClick pour vérifier si la réponse est correcte
+  const checkResponse = (response: Word) => {
+    setResult(response.genre === genre)
+  }
 
   return (
     <div>
-      <ChoiceResponseButton />
-      <ChoiceResponseButton />
+      <ChoiceResponseButton value={firstWord.nom} onClick={()=> checkResponse(firstWord)}/>
+      <ChoiceResponseButton value={secondWord.nom} onClick={() => checkResponse(secondWord)}/>
     </div>
   )
 }

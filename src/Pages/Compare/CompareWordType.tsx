@@ -4,11 +4,12 @@ import ResponseComponents from "../../components/ResponseComponents";
 
 function CompareWordType() {
   const [result, setResult] = useState<boolean | null>(null);
+  const [genre, setGenre] = useState<string>('masculin');
   
   return (
     <div className="page-container">
-      <h1>Trouve le mot féminin</h1>
-      <CompareWordTypeComponent setResult={setResult} />
+      <h1>Trouve le mot {genre}</h1>
+      <CompareWordTypeComponent setResult={setResult} genre={genre} />
       <ResponseComponents result={result}/>
     </div>
   )
