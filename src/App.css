@@ -1,0 +1,36 @@
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: rgb(97, 135, 248);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.exercises {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exercises a {
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgb(97, 135, 248);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.exercise a:hover {
+  background-color: rgb(176, 218, 246);
+}

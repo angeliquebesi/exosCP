@@ -10,8 +10,8 @@ interface MoreHighComponentsProps {
 function MoreLessComponents({ setResult, compareSymbol }: Readonly<MoreHighComponentsProps>) {
   const [disabledButton, setDisabledButton] = useState<boolean>(false);
   const [updateTrigger, setUpdateTrigger] = useState<number>(0);
-  const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 50), [updateTrigger]);
-  const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 50, ButtonValue1), [updateTrigger]);
+  const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 100), [updateTrigger]);
+  const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 100, ButtonValue1), [updateTrigger]);
 
   useEffect(() => {
     if (!disabledButton) {
