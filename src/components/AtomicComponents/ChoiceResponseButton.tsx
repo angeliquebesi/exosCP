@@ -1,14 +1,13 @@
 import './ChoiceResponseButton.css'
 
 interface ChoiceResponseButtonProps {
-  readonly value: number | string
-  readonly onClick: () => void
-  readonly disabled: boolean
+  value: number | string
+  onClick: () => void
 }
 
-function ChoiceResponseButton({ value, onClick, disabled }: Readonly<ChoiceResponseButtonProps>) {
+function ChoiceResponseButton({ value, onClick }: Readonly<ChoiceResponseButtonProps>) {
   return (
-    <button onClick={onClick} className="choice-response-button" disabled={disabled}>
+    <button onClick={onClick} className="choice-response-button" >
       {value}
     </button>
   )
