@@ -1,13 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
+import { ResultContext } from "../context/ResultContext";
 import getRandomIntInclusive from "../utils/getRandomIntInclusive";
 import ChoiceResponseButton from "./AtomicComponents/ChoiceResponseButton";
 
 interface MoreHighComponentsProps {
-  setResult: (result: boolean | null) => void;
   compareSymbol: string;
 }
 
-function MoreLessComponents({ setResult, compareSymbol }: Readonly<MoreHighComponentsProps>) {
+function MoreLessComponents({ compareSymbol }: Readonly<MoreHighComponentsProps>) {
+  const { setResultValue } = useContext(ResultContext);
   const [disabledButton, setDisabledButton] = useState<boolean>(false);
   const [updateTrigger, setUpdateTrigger] = useState<number>(0);
   const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 100), [updateTrigger]);
@@ -22,14 +23,14 @@ function MoreLessComponents({ setResult, compareSymbol }: Readonly<MoreHighCompo
 
   const compareValue = (buttonValue: number, otherValue: number) => {
     if (compareSymbol === 'more') {
-      setResult(buttonValue > otherValue );
+      setResultValue(buttonValue > otherValue );
     } else {
-      setResult(buttonValue < otherValue );
+      setResultValue(buttonValue < otherValue );
     }
     setDisabledButton(prev => !prev);
     setTimeout(() => {
       setDisabledButton(prev => !prev)
-      setResult(null)
+      setResultValue(null)
     }, 2000)  
   }
 
