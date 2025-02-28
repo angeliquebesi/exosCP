@@ -1,4 +1,4 @@
-import { useContext, useMemo, useState } from "react";
+import { useContext, useMemo } from "react";
 import { ResultContext } from "../context/ResultContext";
 import getRandomIntInclusive from "../utils/getRandomIntInclusive";
 import ChoiceResponseButton from "./AtomicComponents/ChoiceResponseButton";
@@ -8,8 +8,7 @@ interface MoreHighComponentsProps {
 }
 
 function MoreLessComponents({ compareSymbol }: Readonly<MoreHighComponentsProps>) {
-  const { setResultValue } = useContext(ResultContext);
-  const [updateTrigger, setUpdateTrigger] = useState<number>(0);
+  const { setResultValue, updateTrigger } = useContext(ResultContext);
 
   const ButtonValue1 = useMemo(() => getRandomIntInclusive(0, 100), [updateTrigger]);
   const ButtonValue2 = useMemo(() => getRandomIntInclusive(0, 100, ButtonValue1), [updateTrigger]);
@@ -20,10 +19,6 @@ function MoreLessComponents({ compareSymbol }: Readonly<MoreHighComponentsProps>
     } else {
       setResultValue(buttonValue < otherValue);
     }
-    setTimeout(() => {
-      setResultValue(null);
-      setUpdateTrigger(prev => prev + 1);
-    }, 2000);
   }
 
   return (

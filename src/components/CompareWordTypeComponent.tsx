@@ -4,8 +4,8 @@ import { getRandomWord, Word } from "../utils/getRandomWord"
 import ChoiceResponseButton from "./AtomicComponents/ChoiceResponseButton"
 
 function CompareWordTypeComponent({ genre }: Readonly<{genre: string}>) {
-  const { setResultValue } = useContext(ResultContext)
-  const firstWord = useMemo(() => getRandomWord(), [])
+  const { setResultValue, updateTrigger } = useContext(ResultContext)
+  const firstWord = useMemo(() => getRandomWord(), [updateTrigger])
   const secondWord = useMemo(() => getRandomWord(firstWord), [firstWord])
 
   const checkResponse = (response: Word) => {

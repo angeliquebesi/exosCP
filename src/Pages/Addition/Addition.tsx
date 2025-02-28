@@ -1,22 +1,15 @@
-import { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import NumericKeypad from "../../components/AtomicComponents/NumericKeypad";
 import ResponseInput from "../../components/AtomicComponents/ResponseInput";
 import { ResultContext } from "../../context/ResultContext";
 import getRandomIntInclusive from "../../utils/getRandomIntInclusive";
 
 function Addition() {
-  const { resultValue, setResultValue } = useContext(ResultContext);
+  const { setResultValue, updateTrigger } = useContext(ResultContext);
   const [disabledButton, setDisabledButton] = useState<boolean>(false);
-  const [updateTrigger, setUpdateTrigger] = useState<number>(0);
 
   const Value1 = useMemo(() => getRandomIntInclusive(0, 10), [updateTrigger]);
   const Value2 = useMemo(() => getRandomIntInclusive(0, 30), [updateTrigger]);
-
-  useEffect(() => {
-    if (resultValue === null) {
-      setUpdateTrigger(prev => prev + 1);
-    }
-  }, [resultValue]);
 
   const checkResult = () => {
     setResultValue(Value1 + Value2 === parseInt((document.querySelector('input') as HTMLInputElement).value));
@@ -32,7 +25,7 @@ function Addition() {
     <div className="page-container">
       <h1>Quel est le résultat de l'addition ?</h1>
       <ResponseInput label={`${Value1} + ${Value2} =`} checkResult={checkResult} disabledButton={disabledButton} />
-      <NumericKeypad disabledButton={disabledButton} />
+      <NumericKeypad />
     </div>
   )
 }
