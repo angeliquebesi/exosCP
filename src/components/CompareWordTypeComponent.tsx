@@ -1,15 +1,16 @@
 import { useContext, useMemo } from "react"
 import { ResultContext } from "../context/ResultContext"
-import getRandomWord, { Word } from "../utils/getRandomWord"
+import { WordType } from "../Pages/Compare/CompareWordType"
+import getRandomWord, { Condition, Word } from "../utils/getRandomWord"
 import ChoiceResponseButton from "./AtomicComponents/ChoiceResponseButton"
 
-function CompareWordTypeComponent({ genre }: Readonly<{genre: string}>) {
+function CompareWordTypeComponent({ wordType, condition }: Readonly<{wordType: WordType, condition: Condition}>) {
   const { setResultValue, updateTrigger } = useContext(ResultContext)
   const firstWord = useMemo(() => getRandomWord(), [updateTrigger])
-  const secondWord = useMemo(() => getRandomWord(firstWord, 'genre'), [firstWord])
+  const secondWord = useMemo(() => getRandomWord(firstWord, condition), [firstWord, condition])
 
   const checkResponse = (response: Word) => {
-    setResultValue(response.genre === genre)
+    setResultValue(response[condition] === wordType)
   }
 
   return (

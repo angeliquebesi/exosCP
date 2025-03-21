@@ -2,19 +2,28 @@ import dictionnaire from '../data/dictionnaire.json';
 
 export interface Word {
   nom: string;
-  genre: string;
-  nombre: string;
+  genre: 'masculin' | 'féminin';
+  nombre: 'singulier' | 'pluriel';
 }
 
-type Condition= 'genre' | 'nombre';
+export type Condition = 'genre' | 'nombre';
 
 export default function getRandomWord(excluded?: Word, condition?: Condition): Word {
-  let randomWord: Word;
-  do {
-    const randomIndex = Math.floor(Math.random() * dictionnaire.length);
-    randomWord = dictionnaire[randomIndex];
-  } 
-  while (condition && randomWord[condition] === excluded?.[condition]);
+  if (excluded && !condition) {
+    throw new Error("Condition is required when 'excluded' is provided.");
+  }
 
-  return randomWord;
+  const filteredWords = dictionnaire.filter(word => {
+    if (excluded && condition) {
+      return word[condition] !== excluded[condition];
+    }
+    return true;
+  });
+
+  if (filteredWords.length === 0) {
+    throw new Error('No valid word found in the dictionary.');
+  }
+
+  const randomIndex = Math.floor(Math.random() * filteredWords.length);
+  return filteredWords[randomIndex] as Word;
 }
