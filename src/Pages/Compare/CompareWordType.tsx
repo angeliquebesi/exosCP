@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import CompareWordTypeComponent from "../../components/CompareWordTypeComponent";
+import { ResultContext } from "../../context/ResultContext";
 
 function CompareWordType() {
-  const [genre, setGenre] = useState<string>('masculin');
+  const { updateTrigger } = useContext(ResultContext);
+  const [genre, setGenre] = useState<string>('');
+
+  useEffect(() => {
+    const randomGenre = Math.random() > 0.5 ? 'masculin' : 'féminin';    
+    setGenre(randomGenre);
+  }, [updateTrigger]);
   
   return (
     <div className="page-container">
