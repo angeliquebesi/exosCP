@@ -14,7 +14,7 @@ function CompareWordTypeComponent({ wordType, condition }: Readonly<{wordType: W
   }
 
   return (
-    <div>
+    <div className="choice-response-container">
       <ChoiceResponseButton value={firstWord.nom} onClick={()=> checkResponse(firstWord)}/>
       <ChoiceResponseButton value={secondWord.nom} onClick={() => checkResponse(secondWord)}/>
     </div>

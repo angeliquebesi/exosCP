@@ -22,7 +22,7 @@ function MoreLessComponents({ compareSymbol }: Readonly<MoreHighComponentsProps>
   }
 
   return (
-    <div>
+    <div className="choice-response-container">
       <ChoiceResponseButton value={ButtonValue1} onClick={() => compareValue(ButtonValue1, ButtonValue2)} />
       <ChoiceResponseButton value={ButtonValue2} onClick={() => compareValue(ButtonValue2, ButtonValue1)} />
     </div>
