@@ -6,13 +6,15 @@ export interface Word {
   nombre: string;
 }
 
-export const getRandomWord = (excluded?: Word): Word => {
+type Condition= 'genre' | 'nombre';
+
+export default function getRandomWord(excluded?: Word, condition?: Condition): Word {
   let randomWord: Word;
   do {
     const randomIndex = Math.floor(Math.random() * dictionnaire.length);
     randomWord = dictionnaire[randomIndex];
   } 
-  while (randomWord.genre === excluded?.genre);
+  while (condition && randomWord[condition] === excluded?.[condition]);
 
   return randomWord;
 }
